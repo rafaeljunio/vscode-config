@@ -1,17 +1,4 @@
 {
-  "apc.font.family": "Roboto", //inter
-  "apc.listRow": {
-    "height": 24
-  },
-  "apc.stylesheet": {
-    ".title-label > h2": "display: none",
-    ".editor-actions": "display: none",
-    ".monaco-list-row": "border-radius: 4px;",
-    ".monaco-workbench .monaco-list:not(.element-focused):focus:before": "display: none;"
-  },
-  "apc.header": {
-    "height": 36
-  },
   "cSpell.enableFiletypes": [
     "!asciidoc",
     "!c",
@@ -54,6 +41,7 @@
     "IUGU",
     "jamjuree",
     "jupiter",
+    "kinde",
     "liveblocks",
     "LIVEBLOCKS",
     "Marguerita",
@@ -61,6 +49,8 @@
     "mixpanel",
     "monaco",
     "nestjs",
+    "nextjs",
+    "novu",
     "omni",
     "Omni",
     "Onboarded",
@@ -96,8 +86,6 @@
     "WEBPUSH"
   ],
   "cSpell.language": "en,pt",
-  "CodeGPT.apiKey": "CodeGPT Plus",
-  "CodeGPT.query.language": "English",
   "editor.acceptSuggestionOnCommitCharacter": false,
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit",
@@ -107,31 +95,30 @@
   "editor.cursorSmoothCaretAnimation": "on",
   "editor.cursorStyle": "block",
   "workbench.colorCustomizations": {
-    "editorCursor.foreground": "#00CEF1"
+    "editorCursor.foreground": "#F4D93A"
   },
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.fontFamily": "Dank Mono",
-  "editor.fontLigatures": true,
-  "editor.fontSize": 17,
-  "editor.formatOnSave": true,
-  "editor.hideCursorInOverviewRuler": true,
-  "editor.lineHeight": 1.8,
+  // "editor.fontFamily": "Monaco",
+  // "editor.fontFamily": "Cascadia Code, Consolas",
+  "editor.fontFamily": "JetBrains Mono",
+  "editor.fontLigatures": "'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'zero', 'onum'",
+  // "editor.fontLigatures": true,
+  "editor.fontSize": 15,
+  // "editor.hideCursorInOverviewRuler": true,
+  "editor.lineHeight": 2.0,
+  // "editor.letterSpacing": 0.4,
+  // "editor.fontWeight": "200",
+  "editor.fontWeight": "100",
   "editor.minimap.enabled": true,
   "editor.parameterHints.enabled": true,
   "editor.renderLineHighlight": "gutter",
-  "editor.renderWhitespace": "boundary",
-  "editor.rulers": [
-    80,
-    120
-  ],
+  // "editor.renderWhitespace": "boundary",
+  // "editor.rulers": [
+  //   80,
+  //   120
+  // ],
   "editor.suggestSelection": "first",
   "editor.semanticHighlighting.enabled": false,
   "editor.tabSize": 2,
-  "eslint.validate": [
-    "javascript",
-    "javascriptreact",
-    "graphql"
-  ],
   "emmet.includeLanguages": {
     "javascript": "javascriptreact"
   },
@@ -149,6 +136,11 @@
     ".env.local": ".env*",
     ".env": ".env*"
   },
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "graphql"
+  ],
   "extensions.ignoreRecommendations": true,
   "files.exclude": {
     "**/CVS": true,
@@ -156,23 +148,18 @@
     "**/.hg": true,
     "**/.svn": true,
     "**/.git": true,
-    ".vscode": true
+    "**/.trunk/*actions/": true,
+    "**/.trunk/*logs/": true,
+    "**/.trunk/*notifications/": true,
+    "**/.trunk/*out/": true,
+    "**/.trunk/*plugins/": true
   },
   "git.enableSmartCommit": true,
   "git.openRepositoryInParentFolders": "always",
   "gitlens.codeLens.recentChange.enabled": false,
   "gitlens.codeLens.authors.enabled": false,
   "javascript.suggest.autoImports": true,
-  "[javascript]": {
-    "editor.defaultFormatter": "vscode.typescript-language-features"
-  },
   "javascript.updateImportsOnFileMove.enabled": "always",
-  "[jsonc]": {
-    "editor.defaultFormatter": "vscode.json-language-features"
-  },
-  "[json]": {
-    "editor.defaultFormatter": "vscode.json-language-features"
-  },
   "files.associations": {
     ".env.*": "dotenv",
     ".prettierrc": "json",
@@ -186,15 +173,6 @@
   "RainbowBrackets.depreciation-notice": false,
   "security.promptForLocalFileProtocolHandling": false,
   "security.workspace.trust.untrustedFiles": "newWindow",
-  "symbols.hidesExplorerArrows": false,
-  "symbols.files.associations": {
-    "*.module.ts": "nest",
-    "*.guard.ts": "typescript",
-    "*.spec.ts": "ts-test",
-    "*.e2e-spec.ts": "ts-test",
-    "vitest.config.e2e.ts": "vite",
-    ".env.example": "gear"
-  },
   "tabnine.experimentalAutoImports": true,
   "tailwindCSS.experimental.classRegex": [
     [
@@ -205,8 +183,9 @@
   "terminal.integrated.env.osx": {
     "FIG_NEW_SESSION": "1"
   },
-  "terminal.integrated.fontSize": 12,
-  "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
+  "terminal.integrated.fontSize": 13,
+  // "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
+  "terminal.integrated.fontFamily": "Fira Code Nerd Font Mono",
   "terminal.integrated.gpuAcceleration": "off",
   "terminal.integrated.showExitAlert": false,
   "typescript.updateImportsOnFileMove.enabled": "always",
@@ -219,12 +198,40 @@
   "window.commandCenter": true,
   "workbench.editor.empty.hint": "hidden",
   "workbench.editor.labelFormat": "short",
-  "workbench.iconTheme": "symbols",
-  "workbench.productIconTheme": "fluent-icons",
   "workbench.startupEditor": "newUntitledFile",
-  "eslint.format.enable": true,
   "workbench.layoutControl.enabled": false,
   "workbench.tree.enableStickyScroll": false,
   "editor.stickyScroll.enabled": false,
-  "workbench.colorTheme": "Dark Magic Tokyo"
+  "files.watcherExclude": {
+    "**/.trunk/*actions/": true,
+    "**/.trunk/*logs/": true,
+    "**/.trunk/*notifications/": true,
+    "**/.trunk/*out/": true,
+    "**/.trunk/*plugins/": true
+  },
+  "console-ninja.featureSet": "Community",
+  "workbench.iconTheme": "vscode-great-icons",
+  "workbench.colorTheme": "Houston",
+  "indenticator.width": 2,
+  // "editor.defaultFormatter": "biome",
+  "[javascript]": {
+    "editor.defaultFormatter": "biomejs.biome"
+    // "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "editor.formatOnType": true,
+  "trunk.showPreexistingIssues": true,
+  "GitLive.Issue tracker integration": "Disabled",
+  "git.autofetch": true,
+  "GitLive.Special branches": "main|master|trunk|dev|develop|qa|test|release[-/].*",
+  "workbench.editor.customLabels.patterns": {
+    "**/{layout,page}.tsx": "${dirname} ${filename}"
+  },
+  "window.confirmSaveUntitledWorkspace": false,
+  "workbench.sideBar.location": "left",
+  "importSorter.generalConfiguration.sortOnBeforeSave": true,
 }
